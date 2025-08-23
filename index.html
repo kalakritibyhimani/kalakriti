@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalakriti by Himani - Handmade Festive Treasures</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>✨ Kalakriti by Himani</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#thali" class="nav-link" data-section="thali">Handmade Thali</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lota" class="nav-link" data-section="lota">Decorated Lota</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#festival-sets" class="nav-link" data-section="festival-sets">Festival Sets</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h1 class="hero-title">Kalakriti by Himani</h1>
+                <p class="hero-tagline">✨ Handcrafted Festive Treasures for Sacred Celebrations ✨</p>
+                <p class="hero-description">Bringing tradition to life with authentic handmade items for your special occasions</p>
+                <button class="cta-button" onclick="showSection('thali')">
+                    <i class="fas fa-shopping-bag"></i> Explore Collection
+                </button>
+            </div>
+            <div class="hero-decoration">
+                <div class="mandala-pattern"></div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="container">
+                <!-- <h2 class="section-title">Why Choose Shubh Crafts?</h2> -->
+                <h2 class="section-title">Why Choose Kalakriti by Himani?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Handcrafted</h3>
+                        <p>Each piece is lovingly crafted by skilled artisans</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏛️</div>
+                        <h3>Traditional</h3>
+                        <p>Authentic designs rooted in Indian culture</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>Premium Quality</h3>
+                        <p>High-quality materials for lasting beauty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Handmade Thali Section -->
+    <section id="thali" class="section">
+        <div class="container">
+            <div class="category-header">
+                <h1 class="category-title"> Handmade Thali Collection</h1>
+                <p class="category-description">Beautiful handcrafted thalis for your festive dining and puja ceremonies</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ganpatiadd.jpg" alt="Golden Brass Thali">
+                        <div class="product-overlay">
+                            <span class="product-tag">Bestseller</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ganpati  Thali</h3>
+                        <p class="product-description">Elegant  thali with intricate traditional patterns, perfect for special occasions</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Golden Brass Thali', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/omthaliart.jpg" alt="Silver Plated Thali">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">OM Thali</h3>
+                        <p class="product-description">Premium  thali with decorative OM design and traditional motifs</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Silver Plated Thali', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/karwachaut.jpg" alt="Copper Thali Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Karwachaut Thali </h3>
+                        <p class="product-description">Complete Karwachaut thali set with  decorative elements</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Copper Thali Set', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7525206/pexels-photo-7525206.jpeg" alt="Decorative Puja Thali">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Decorative Puja Thali</h3>
+                        <p class="product-description">Ornate thali with beautiful engravings, ideal for religious ceremonies</p>
+                        <div class="product-price">₹2,799</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Decorative Puja Thali', '₹2,799')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/4553111/pexels-photo-4553111.jpeg" alt="Royal Thali Collection">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Royal Thali Collection</h3>
+                        <p class="product-description">Luxurious thali with gold accents and precious stone inlays</p>
+                        <div class="product-price">₹4,999</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Royal Thali Collection', '₹4,999')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/6150516/pexels-photo-6150516.jpeg" alt="Traditional Brass Thali">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Traditional Brass Thali</h3>
+                        <p class="product-description">Classic brass thali with traditional Indian patterns and finish</p>
+                        <div class="product-price">₹1,699</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Traditional Brass Thali', '₹1,699')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorated Lota Section -->
+    <section id="lota" class="section">
+        <div class="container">
+            <div class="category-header">
+                <h1 class="category-title">🏺 Decorated Lota Collection</h1>
+                <p class="category-description">Exquisite decorated lotas for water rituals and ceremonial purposes</p>
+            </div>
+            <div class="products-grid">
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7260303/pexels-photo-7260303.jpeg" alt="Golden Kalash Lota">
+                        <div class="product-overlay">
+                            <span class="product-tag">Sacred</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Golden Kalash Lota</h3>
+                        <p class="product-description">Sacred golden kalash with traditional motifs for puja ceremonies</p>
+                        <div class="product-price">₹3,499</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Golden Kalash Lota', '₹3,499')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/6510936/pexels-photo-6510936.jpeg" alt="Silver Decorated Lota">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silver Decorated Lota</h3>
+                        <p class="product-description">Beautifully crafted silver lota with intricate engravings</p>
+                        <div class="product-price">₹2,899</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Silver Decorated Lota', '₹2,899')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7260302/pexels-photo-7260302.jpeg" alt="Copper Ritual Lota">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Copper Ritual Lota</h3>
+                        <p class="product-description">Pure copper lota with decorative patterns, ideal for daily rituals</p>
+                        <div class="product-price">₹1,399</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Copper Ritual Lota', '₹1,399')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/allthalibg.jpg" alt="Brass Temple Lota">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Brass Temple Lota</h3>
+                        <p class="product-description">Traditional brass lota with temple-style decorations and spout</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Brass Temple Lota', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/allthalibg.jpg" alt="Decorative Water Vessel">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Decorative Water Vessel</h3>
+                        <p class="product-description">Ornate water vessel with artistic handles and traditional designs</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Decorative Water Vessel', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/allthalibg.jpg" alt="Premium Kalash Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Kalash Set</h3>
+                        <p class="product-description">Complete kalash set with coconut holder and decorative base</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Premium Kalash Set', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festival Sets Section -->
+    <section id="festival-sets" class="section">
+        <div class="container">
+            <div class="category-header">
+                <h1 class="category-title">🎊 Festival Sets Collection</h1>
+                <p class="category-description">Complete festive sets for all your celebration needs</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/allthali.jpg" alt="Diwali Celebration Set">
+                        <div class="product-overlay">
+                            <span class="product-tag">Complete Set</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Diwali Celebration Set</h3>
+                        <p class="product-description">Complete Diwali puja set with diyas, thali, and decorative items</p>
+                        <div class="product-price">₹1,500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Diwali Celebration Set', '₹1,500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/ganpatilook.jpg" alt="Ganesh Chaturthi Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ganesh Chaturthi Set</h3>
+                        <p class="product-description">Special Ganesh puja set with modak plate, aarti thali, and accessories</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Ganesh Chaturthi Set', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7525147/pexels-photo-7525147.jpeg" alt="Wedding Ceremony Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wedding Ceremony Set</h3>
+                        <p class="product-description">Elegant wedding puja set with kalash, thali, and ceremonial items</p>
+                        <div class="product-price">₹7,999</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Wedding Ceremony Set', '₹7,999')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/6150651/pexels-photo-6150651.jpeg" alt="Housewarming Puja Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Housewarming Puja Set</h3>
+                        <p class="product-description">Auspicious Griha Pravesh set with kalash, coconut, and puja essentials</p>
+                        <div class="product-price">₹3,799</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Housewarming Puja Set', '₹3,799')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/karwachaut.jpg" alt="Navratri Special Set">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Navratri Special Set</h3>
+                        <p class="product-description">Divine Navratri collection with Mata ki Chowki essentials</p>
+                        <div class="product-price">₹500</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Navratri Special Set', '₹500')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/7260305/pexels-photo-7260305.jpeg" alt="Daily Puja Essentials">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Daily Puja Essentials</h3>
+                        <p class="product-description">Complete daily worship set with all necessary items for home temple</p>
+                        <div class="product-price">₹2,999</div>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('Daily Puja Essentials', '₹2,999')">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✨ Kalakriti by Himani</h3>
+                    <p>Handcrafted festive treasures for your sacred celebrations. Bringing tradition to life with authentic artisan creations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> House No. 2106 Parvatiya Colony Fridabad Gali no. 78</p>
+                        <p><i class="fab fa-whatsapp"></i> +91 7838751967</p>
+                        <p><i class="fas fa-envelope"></i>kalkritibyhimani@gmail.com </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="mandala-footer"></div>
+                <p>&copy; 2025 @ Kalakriti by Himani. Made with ❤️ for preserving Indian traditions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
