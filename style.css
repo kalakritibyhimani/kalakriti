@@ -139,8 +139,10 @@ h4 { font-size: 1.25rem; }
 
 /* Hero Banner */
 .hero-banner {
-    background: var(--gradient-hero),
-                url('https://images.pexels.com/photos/4553037/pexels-photo-4553037.jpeg') center/cover;
+    /* background: var(--gradient-hero),
+                url('https://images.pexels.com/photos/4553037/pexels-photo-4553037.jpeg') center/cover; */
+                 background: var(--gradient-hero),
+                url('') center/cover;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -588,6 +590,59 @@ h4 { font-size: 1.25rem; }
 }
 
 /* Responsive Design */
+
+/* Tablet and smaller desktop */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .nav-menu {
+        gap: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2.5rem;
+    }
+
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.4rem; }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -601,7 +656,7 @@ h4 { font-size: 1.25rem; }
         background: var(--gradient-primary);
         width: 100%;
         text-align: center;
-        /* transition: 0.3s; */
+        transition: left 0.3s ease;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
         gap: 0;
@@ -640,12 +695,13 @@ h4 { font-size: 1.25rem; }
     }
 
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1.5rem;
     }
 
     .product-card {
-        margin: 0 1rem;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     .mandala-pattern {
@@ -653,7 +709,7 @@ h4 { font-size: 1.25rem; }
     }
 
     .features-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
     }
 
@@ -689,9 +745,9 @@ h4 { font-size: 1.25rem; }
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .product-card {
-        margin: 0;
+        margin: 0 auto;
         max-width: 100%;
     }
     
@@ -714,6 +770,12 @@ h4 { font-size: 1.25rem; }
     .product-info {
         padding: 1rem;
     }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Loading and Animation Effects */
